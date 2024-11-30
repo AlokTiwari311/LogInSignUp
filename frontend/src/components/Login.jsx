@@ -16,7 +16,7 @@ const Login = () => {
     event.preventDefault(); // Prevent default form submission behavior
 
     try {
-      const response = await axios.post("http://localhost:8080/auth/login", {
+      const response = await axios.post("https://login-signup-api-taupe.vercel.app/login", {
         email,
         password,
       });
